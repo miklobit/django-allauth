@@ -31,3 +31,5 @@ virtualenv
 *.prefs
 *.mo
 /.stfolder
+
+runtest.sh
