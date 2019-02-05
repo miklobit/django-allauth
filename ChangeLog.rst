@@ -1,4 +1,42 @@
-0.37.0 (unreleased)
+0.39.0 (Unreleased)
+*******************
+
+Note worthy changes
+-------------------
+
+- New providers: JupyterHub (OAuth2), Steam (OpenID)
+
+
+0.38.0 (2018-10-03)
+*******************
+
+Security notice
+---------------
+
+The ``{% user_display user %}`` tag did not escape properly. Depending on the
+username validation rules, this could lead to XSS issues.
+
+
+Note worthy changes
+-------------------
+
+- New provider: Vimeo (OAuth2).
+
+- New translations: Basque.
+
+
+0.37.1 (2018-08-27)
+*******************
+
+Backwards incompatible changes
+------------------------------
+
+- Dropped the ``x-li-src: msdk`` headers from the ``linkedin_oauth2`` handshake.
+  This header is only required for mobile tokens, and breaks the regular flow.
+  Use the ``HEADERS`` setting to add this header if you need it.
+
+
+0.37.0 (2018-08-27)
 *******************
 
 Note worthy changes
@@ -9,8 +47,9 @@ Note worthy changes
 - User model using a ``UUIDField`` as it's primary key can now be logged
   in upon email confirmation (if using ``ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION``).
 
-- New providers: Agave, Disqus, Globus
+- New providers: Agave, Cern, Disqus, Globus.
 
+- New translation: Danish.
 
 0.36.0 (2018-05-08)
 *******************

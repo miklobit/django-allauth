@@ -6,7 +6,7 @@ Requirements
 
 - Python 2.7, 3.3, 3.4, 3.5 or 3.6
 
-- Django (1.10+)
+- Django (1.11+)
 
 - python-openid or python3-openid (depending on your Python version)
 
@@ -107,6 +107,8 @@ Supported Providers
 
 - Instagram (OAuth2)
 
+- JupyterHub (OAuth2)
+
 - Kakao (OAuth2)
 
 - Line (OAuth2)
@@ -153,6 +155,8 @@ Supported Providers
 
 - Stack Exchange (OAuth2)
 
+- Steam (OpenID)
+
 - Stripe (OAuth2)
 
 - Telegram
@@ -167,7 +171,7 @@ Supported Providers
 
 - Untappd (OAuth2)
 
-- Vimeo (OAuth)
+- Vimeo (OAuth, OAuth2)
 
 - VK (OAuth2)
 
